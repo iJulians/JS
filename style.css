@@ -1,0 +1,135 @@
+/* RESET ================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Background ================*/
+ body {
+  background: #000000;
+  font-family: 'Audiowide', cursive;
+  padding-right: 2.25rem;
+  padding-left: 2.25rem;
+ }
+
+/* Dividers ================*/
+   .divider-1 {
+    height: 1px;
+    background: linear-gradient(68.15deg,
+              #ffffff, 16.62%,
+              #000000 85.61%);
+  }
+  
+  .divider-2 {
+    height: 1px;
+    background: linear-gradient(68.15deg,
+              #000000, 16.62%,
+              #ffffff 85.61%);
+  }
+
+/* Header ================*/
+ .cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0.56rem;
+    
+  }
+
+  .cabecalho-menu {
+    display: flex;
+    gap: 10.687rem;
+  
+  }
+ 
+  .cabecalho-menu-item {
+    color: #ffffff;
+    font-size: 1rem;
+    padding:0.5rem;
+  }
+
+/* Conteudo Sobre ================*/
+
+.conteudo {
+  display: flex;
+}
+
+.conteudo-sobre {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 13.06rem;
+  margin-top: 5.625rem;
+}
+
+.conteudo-img {
+  height: 40.81rem;
+  width: 43.875rem;
+}
+
+
+.projetos {
+  margin-top: 2rem;
+  color: white;
+}
+.projetos-sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1.5rem;
+  margin-bottom: 2rem;
+  padding: 5rem;
+}
+.projetos img {
+  height: 20rem;
+}
+
+/* Contatos ================*/
+.icones{
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul{
+  position: relative;
+  display: flex;
+}
+ul li {
+  position: relative;
+  list-style: none;
+  margin: 0 1.25rem;
+  cursor: pointer;
+}
+ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #222;
+
+  transition: 0.5s ease-in-out;
+}
+
+ul li a:hover {
+  color: white;
+  font: 1.7rem;
+}
+
+button {
+  height: 2.5rem;
+  width: 9rem;
+  background: #222;
+
+  transition: 0.5s ease-in-out;
+}
+
+button:hover {
+  color: white;
+}
