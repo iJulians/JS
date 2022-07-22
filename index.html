@@ -3,6 +3,11 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -32,17 +37,17 @@
       </nav>
     </header>
 
-    <div class="divider-1"></div>
-
     <main>
       <section class="conteudo" id="about">
         <div class="conteudo-sobre">
-          <h2>Quem sou eu?</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum veniam
-            voluptas, amet impedit quas reiciendis officiis itaque voluptatibus
-            quos exercitationem magni at labore a repudiandae. Ratione deserunt
-            ipsa distinctio sequi?
+          <h2 class="subtitle">Quem sou eu?</h2>
+          <p class="text">
+            Me chamo Juliano Silveira, meu primeiro contato com programação foi
+            aos 22 anos de idade, quando fui promovido ao cargo de Assistente de
+            logística na empresa Marisa S.A. La comecei a ter mais contato com
+            Excel + VBA, onde comecei a programar planilhas para auxiliar a
+            operação, automatizar processos repetitivos e desenvolvimento de
+            relatórios.
           </p>
         </div>
         <img
@@ -52,23 +57,53 @@
         />
       </section>
 
-      <div class="divider-2"></div>
+      <div class="divider-1"></div>
 
-      <section class="projetos" id="project">
-        <h2 class="pojetos-subtitiulo">Projetos</h2>
-        <div class="projetos-sobre">
-          <h3>easyLink.</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-            sunt laudantium ad! Quae fugiat corporis nulla cumque nam magni
-            voluptatem totam eum sint accusamus. Labore iusto pariatur laborum
-            minus fugiat?
-          </p>
-          <img src="./img/Project1.jpg" alt="" />
+      <section class="section" id="project">
+        <div class="container swiper">
+          <h2 class="subtitle">Projetos</h2>
+
+          <div class="projetos swiper-container">
+            <div class="swiper-wrapper">
+              <div class="projeto swiper-slide">
+                <h3>easyLink.</h3>
+                <p>
+                  Um projeto baseado no site
+                  <a
+                    href="https://linktr.ee/s/linktree-for-brazil/?&utm_source=google&utm_medium=cpc&utm_campaign=BAU_BR_Google_Search_Brand_Intent_Local&utm_term=linktree&utm_content=BAU_BR_Google_Search_Brand_Intent_Local_Linktree&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2Fbqwq7Q6yajFqNQwWqof5qWhUkhZppAiUU2LlT0rwHNQaMnYzxt_YaAg1TEALw_wcB&gclsrc=aw.ds"
+                  >
+                    Linktree</a
+                  >
+                  onde o intuito é facilitar o acesso as outros meios de
+                  comunicação do usuário. Projeto criado apenas para
+                  aprendizado.
+                </p>
+                <img src="./assets/img/Project1.jpg" alt="" />
+              </div>
+
+              <div class="projeto swiper-slide">
+                <h3>easyLink.</h3>
+                <p>
+                  Um projeto baseado no site
+                  <a
+                    href="https://linktr.ee/s/linktree-for-brazil/?&utm_source=google&utm_medium=cpc&utm_campaign=BAU_BR_Google_Search_Brand_Intent_Local&utm_term=linktree&utm_content=BAU_BR_Google_Search_Brand_Intent_Local_Linktree&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2Fbqwq7Q6yajFqNQwWqof5qWhUkhZppAiUU2LlT0rwHNQaMnYzxt_YaAg1TEALw_wcB&gclsrc=aw.ds"
+                  >
+                    Linktree</a
+                  >
+                  onde o intuito é facilitar o acesso as outros meios de
+                  comunicação do usuário. Projeto criado apenas para
+                  aprendizado.
+                </p>
+                <img src="./assets/img/Project1.jpg" alt="" />
+              </div>
+            </div>
+
+            <!-- caso precise de paginção -->
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </section>
-
-      <div class="divider-1"></div>
+      <div class="divider-2"></div>
     </main>
 
     <footer class="icones" id="contact">
@@ -85,5 +120,14 @@
       </ul>
       <button>Entre em contato já</button>
     </footer>
+
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- main.js -->
+    <script src="./main.js"></script>
   </body>
 </html>
